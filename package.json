@@ -10,7 +10,8 @@
     "check-format": "prettier --check .",
     "check-types": "tsc --pretty --noEmit",
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
-    "format": "npm run check-lint --fix && npx prettier --write ."
+    "format": "npm run check-lint --fix && npx prettier --write .",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
@@ -38,6 +39,7 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8.56.0",
     "eslint-config-next": "14.0.4",
+    "husky": "^8.0.0",
     "lint-staged": "^15.2.0",
     "postcss": "^8",
     "prettier": "^3.1.1",
